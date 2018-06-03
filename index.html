@@ -3,10 +3,15 @@
 
 <head>
   <title>Adam Jacob</title>
-
-  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00838e">
+<meta name="apple-mobile-web-app-title" content="Adam Jacob">
+<meta name="application-name" content="Adam Jacob">
+<meta name="msapplication-TileColor" content="#00838e">
 
 
   <!--Import Google Icon Font-->
@@ -18,24 +23,73 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 </head>
 
-<body style="background-color:#F5F5F6; overflow-y:hidden;">
+<body style="background-color:#F5F5F6; overflow-y:hidden; display: flex; min-height: 100vh; flex-direction: column;">
 
-  <nav class="nav-extended">
+  <header>
+
+  <nav class="nav-extended cyan darken-3 waves-effect waves-light">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a>A link</a></li>
-        <li><a>A second link</a></li>
-        <li><a>A third link</a></li>
-      </ul>
+      <a href="#" class="brand-logo center">Adam Jacob</a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large right"><i class="material-icons">email</i></a>
+
     </div>
     <div class="nav-content">
-      <span class="nav-title">Title</span>
-      <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
-            <i class="material-icons">add</i>
-          </a>
+      <ul class="tabs tabs-transparent tabs-fixed-width">
+        <li class="tab"><a class="active" href="#hometab">Home</a></li>
+        <li class="tab"><a href="#cvtab">C.V.</a></li>
+        <li class="tab"><a href="#portfoliotab">Portfolio</a></li>
+      </ul>
     </div>
   </nav>
+
+  <ul class="sidenav" id="slide-out">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="image/abstract_bubbles.jpeg">
+      </div>
+      <a href="#user"><img class="circle" src="image/profile_square.jpg"></a>
+      <a href="#name"><span class="white-text name">Adam Jacob</span></a>
+      <a href="#email"><span class="white-text email">adam@ajcoding.com</span></a>
+    </div></li>
+    <li><a class="subheader">It's easy to get in touch:</a></li>
+
+    <li><a href="tel:0400085664"><i class="material-icons">call</i>Give me a call</a></li>
+    <li><a href="sms:0400085664"><i class="material-icons">chat</i>Have a chat</a></li>
+    <li><a href="mailto:adam@ajcoding.com"><i class="material-icons">email</i>Send me an email</a></li>
+  </ul>
+
+  </header>
+  
+  <main style="flex: 1 0 auto;">
+    
+  <div id="hometab">Home
+  
+  <p>Might have to change the tabs to nonslideable to make sure that everything works better</p>
+  <!--<img src="image/green_beach.jpg">-->
+  
+  
+  
+  </div>
+  
+  
+  <div id="cvtab">C.V.</div>
+  
+  
+  <div id="portfoliotab">Portfolio</div>
+
+
+
+
+  </main>
+  
+  <footer class="page-footer teal lighten-1 waves-effect waves-light">
+            <div class="container">
+            Designed by Adam Jacob
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+          <br>
+        </footer>
 
   <!--JavaScript at end of body for optimized loading-->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
